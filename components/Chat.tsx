@@ -1,7 +1,7 @@
 type Props = {chatId: string};
 
 function Chat({chatId}: Props) {
-	return <div>Chat</div>;
+	return <div className="flex-1 bg-[#444654]">Chat</div>;
 }
 
 export default Chat;
