@@ -3,10 +3,31 @@
 @tailwind utilities;
 
 @layer components {
-  .infoText {
-    @apply p-4 bg-gray-700/50 rounded-lg max-w-[300px];
-  }
-  .chatRow {
-    @apply flex items-center justify-center space-x-2 px-5 py-3 text-sm text-gray-300 transition-all duration-200 ease-out rounded-lg hover:bg-gray-700/70 cursor-pointer;
-  }
+	.infoText {
+		@apply p-4 bg-gray-700/50 rounded-lg max-w-[300px];
+	}
+	.chatRow {
+		@apply flex items-center justify-center space-x-2 px-5 py-3 text-sm text-gray-300 transition-all duration-200 ease-out rounded-lg hover:bg-gray-700/70 cursor-pointer;
+	}
+}
+
+@layer utilities {
+	.scrollbar::-webkit-scrollbar {
+		width: 8px;
+		height: 20px;
+	}
+
+	.scrollbar::-webkit-scrollbar-track {
+		border-radius: 100vh;
+		background: #343541;
+	}
+
+	.scrollbar::-webkit-scrollbar-thumb {
+		background: #565869;
+		border-radius: 100vh;
+	}
+
+	.scrollbar::-webkit-scrollbar-thumb:hover {
+		background: #c0a0b9;
+	}
 }

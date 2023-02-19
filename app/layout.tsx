@@ -21,12 +21,12 @@ export default async function RootLayout({
 					{!session ? (
 						<LogIn />
 					) : (
-						<div className="flex">
-							<div className="bg-[#202123] max-w-xs h-screen overflow-y-auto md:min-w-[20rem]">
+						<div className="flex space-x-0">
+							<div className="bg-[#202123] max-w-xs md:min-w-[16.5rem] h-screen overflow-y-auto">
 								<SideBar />
 							</div>
 							<ClientProvider />
-							<div className="bg-[#343541] flex-1">{children}</div>
+							<div className="flex-1 bg-[#343541]">{children}</div>
 						</div>
 					)}
 				</SessionProvider>

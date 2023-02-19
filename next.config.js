@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
 	reactStrictMode: true,
-	images: {domains: ["lh3.googleusercontent.com"]},
+	images: {domains: ["lh3.googleusercontent.com", "uxwing.com"]},
 	experimental: {appDir: true},
 };
