@@ -28,7 +28,7 @@ function Chat({chatId}: Props) {
 	);
 
 	return (
-		<div className="flex-1 bg-[#343541] w-full overflow-y-hidden">
+		<div className="flex-1 bg-[#343541] w-full overflow-y-auto scrollbar">
 			{messages?.empty && (
 				<>
 					<p className="mt-10 text-center text-white">

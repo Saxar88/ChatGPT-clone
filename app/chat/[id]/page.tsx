@@ -5,7 +5,7 @@ type Props = {params: {id: string}};
 
 function ChatPage({params: {id}}: Props) {
 	return (
-		<div className="flex flex-col items-center h-screen w-full py-3 overflow-y-auto scrollbar">
+		<div className="flex flex-col items-center h-screen w-full py-3">
 			<Chat chatId={id} />
 			<ChatInput chatId={id} />
 		</div>
